@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self';">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hungry Cougar Contact</title>
+    <link rel="stylesheet" href="/Frontend/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>The Hungry Cougar Contact</h1> 
+        <nav>
+            <ul>
+                <li><a href="/Frontend/html/index.html">Owner's Bio</a></li>
+                <li><a href="/Frontend/html/cafeteria_main_page.html">Cafeteria Page</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       <section id="contact">
+           <h2>Contact Us</h2>
+           <!--A form that allows users to input-->
+           <form id="contactForm" action="/submit_contact" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+            <input type="submit" value="Submit">
+          </form>
+       </section>
+    </main>
+
+
+    <footer>
+        <!--Disclaimer that this is fictious infiomation and not real-->
+        <p>&copy; 2024 - UH The Hungry Cougar Cafeteria</p>
+        <p>Disclaimer: All information are fictitious and not real</p>
+        <li><a href="/Frontend/html/contact.html">Contact</a></li>
+    </footer>
+
+    <script src="/Frontend/js/formValidation.js"></script>
+</body>
+</html>

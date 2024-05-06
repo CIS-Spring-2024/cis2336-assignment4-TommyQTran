@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation - The Hungry Cougar Cafeteria</title>
+    <link rel="stylesheet" href="/Frontend/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>The Hungry Cougar Cafeteria</h1>
+        <nav>
+            <ul>
+                <li><a href="/Frontend/html/index.html">Owner's Bio</a></li>
+                <li><a href="/Frontend/html/cafeteria_main_page.html">Cafeteria Page</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="order-confirmation">
+            <h2>Order Confirmation</h2>
+            <p>Thank you for your order!</p>
+            <p>Total Amount: $<span id="total-amount"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 UH - The Hungry Cougar Cafeteria</p>
+        <p>Disclaimer: All information is fictitious and not real</p>
+        <li><a href="/Frontend/html/contact.html">Contact</a></li>
+    </footer>
+
+    <script>
+        // Retrieve the total amount from the URL query parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const totalAmount = urlParams.get('totalAmount');
+        document.getElementById('total-amount').textContent = totalAmount;
+    </script>
+</body>
+</html>
